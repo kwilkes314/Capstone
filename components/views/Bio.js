@@ -5,8 +5,12 @@ export default () => html`
 
 <section id="bio">
     <h2>Kendall Wilkes</h2>
-    <img src="..jpg" />
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sagittis nulla. Etiam semper mauris a quam tempus, non feugiat massa posuere. Morbi vitae nisi aliquam, semper diam id, molestie leo. In hac habitasse platea dictumst. Nulla et enim vel elit dictum viverra. Nunc pharetra lacinia arcu sit amet dignissim. Pellentesque ut mi nulla.</p>
-    <p>Quisque at hendrerit libero, eget interdum lectus. Etiam facilisis leo nulla, sit amet imperdiet nunc molestie vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur consectetur felis a purus volutpat, sed finibus magna iaculis. Pellentesque tristique tristique turpis nec vehicula. Maecenas varius quis tellus id mollis. Vivamus ut ultrices ligula.</p>
-    <p>Etiam egestas consectetur gravida. Nulla mollis suscipit sapien sed fermentum. Integer vitae eros a magna vulputate aliquam. Suspendisse sed pulvinar augue, auctor mollis lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis eleifend diam quis libero sollicitudin efficitur. Nullam sapien eros, tempor eget vulputate ut, interdum vel orci. Donec sit amet tempor mi. Nam feugiat cursus egestas. Suspendisse eget orci et ex mattis ornare tempor non tellus. Suspendisse gravida neque in urna congue bibendum. Duis dui odio, pharetra nec odio ac, ornare vulputate nibh.</p>
+    <img src="ken_headshot.jpg" alt="me" />
+    <p>
+Raised in a home with over 15 mouths to feed, I quickly found love and a gift using my hands to help support the family.</p>
+<p>Technology though has always been my dream and passion.</p> <p>It has helped so many including me to see and reach beyond their current circumstances.</p> <p>To the life that they could usually only dream of. I knew I wanted to be a part of the force for good for my community, my country, and the world.</p>
+<p>Using my knowledge of team building, mission planning, system building, and also my thirst for knowledge and self improvement would translate well into Tech.</p> <p>
+   Jumping into Html, CSS, and JavaScript I never looked back.</p> <p>Through my journey at Savvy coders I have gained hands on experience in building and deploying SPA's using Netlify. Some other skills I gained were Node, MongoDB, Git, Git Bash and many more.</p> <p> Please don't hesitate to reach out. I'm open for opportunities for employment, coffee chats, or if you just have a question.
+Looking forward to working with and hearing from you!!
+    </p>
   </section>`;
