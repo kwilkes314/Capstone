@@ -1,11 +1,12 @@
 import html from "html-literal";
+import image1 from "./img/kenheadshot.jpg"
 
 export default () => html`
 
 
 <section id="bio">
     <h2>Kendall Wilkes</h2>
-    <img src="ken_headshot.jpg" alt="me" />
+    <img src=${image1} alt="me" />
     <p>
 Raised in a home with over 15 mouths to feed, I quickly found love and a gift using my hands to help support the family.</p>
 <p>Technology though has always been my dream and passion.</p> <p>It has helped so many including me to see and reach beyond their current circumstances.</p> <p>To the life that they could usually only dream of. I knew I wanted to be a part of the force for good for my community, my country, and the world.</p>
