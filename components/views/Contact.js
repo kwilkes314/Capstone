@@ -1,7 +1,7 @@
 import html from "html-literal";
 
 export default () => html`
-<form action="" method="POST">
+<form action="" method="POST" id="main">
   <label for="name">Name:</label>
   <input type="text" name="name" id="name" placeholder="Full Name" required />
 
