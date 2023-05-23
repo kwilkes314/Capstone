@@ -1,11 +1,8 @@
 body {
   font-family: "Latto", "lucida-grande", "lucida sans unicode", tahoma,
     sans-serif;
+    background-color: gray;
 
-    background-color:#03a5fc;
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
 }
 
 .image1 {
@@ -17,4 +14,118 @@ body {
 
 }
 
+#jumbotron {
+  background: url(assets/codesnippet2.jpg) center center no-repeat;  background-size: cover;  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+#jumbotron > h2 {
+  color: black;
+  text-align: center;
+}
+
+#jumbotron > a {
+  text-decoration: none;
+  background-color: grey;
+  font-size: 1.5em;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+form {
+  border: solid 3px black;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1rem;
+}
+
+form > * {
+  margin: 0.5rem;
+}
+
+form > input[type="submit"] {
+  width: 5%;
+  margin: 0.5rem;
+  margin-right: auto;
+}
+
+footer {
+  border-top: solid 1px black;
+  padding: 2rem 2rem 4rem;
+  margin: 1rem 1rem;
+}
+
+#bio {
+  margin: 1rem;
+}
+
+@media (max-width: 549px){
+  .hidden--mobile {
+    display: none !important;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  nav > i {
+    padding: 1rem;
+    font-size: 2em;
+  }
+
+  nav > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0;
+  }
+
+  nav > ul > li {
+    padding: 0.5rem;
+    list-style-type: none;
+  }
+
+  #bio img {
+    float: left;
+    width: 40%;
+    height: auto;
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width: 550px) {
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid;
+    padding: 0.5rem 0.5rem;
+    border-radius: 30pxSs;
+  }
+
+  nav > .fa-bars {
+    display: none;
+  }
+
+  #bio {
+    margin-right: 3rem;
+  }
+
+  #bio img {
+    float: left;
+    width: 25%;
+    height: auto;
+    margin-right: 1rem;
+  }
+}
 
