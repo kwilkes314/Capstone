@@ -1,8 +1,10 @@
 // 'Import' the Express module instead of http
 const express = require("express");
 const dotenv = require("dotenv");
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const pizzas = require("./routers/pizzas");
+const bootcamp = require("./routers/bootcamp");
+const contact = require("./routers/contact");
 // Initialize the Express application
 const app = express();
 
@@ -22,7 +24,6 @@ db.once(
 );
 
 //mongodb+srv://kwilkes:alfonso1@cluster0.56cxnlr.mongodb.net/?retryWrites=true&w=majority.
-
 
 const logging = (request, response, next) => {
   console.log(`${request.method} ${request.url} ${Date.now()}`);
@@ -50,12 +51,11 @@ app.use(logging);
 
 // Handle the request with HTTP GET method from http://localhost:4040/status
 app.get("/status", (request, response) => {
-   // Create the headers for response by default 200
-   // Create the response body
-   // End and return the response
+  // Create the headers for response by default 200
+  // Create the response body
+  // End and return the response
   response.send(JSON.stringify({ message: "Service healthy" }));
 });
-
 
 app.get("/weather/:city", (request, response) => {
   // Express adds a "params" Object to requests that has an matches parameter created using the colon syntax
@@ -73,17 +73,16 @@ app.get("/weather/:city", (request, response) => {
   });
 });
 
+//app.post("/add", (request, response) => {
+//const num1 = request.body.numberOne;
+  //const num2 = request.body.numberTwo;
+ // const responseBody = {
+   // sum: num1 + num2
+  //};
+ //response.json(responseBody);
+//});
 
-app.post("/add", (request, response) => {
-  const num1 = request.body.numberOne;
-  const num2 = request.body.numberTwo;
-  const responseBody = {
-     sum: num1 + num2
-  };
-  response.json(responseBody);
-});
-
-app.use("/pizzas", pizzas);
+app.use("/contact", contact);
 
 // Tell the Express app to start listening
 // Let the humans know I am running and listening on 4040
