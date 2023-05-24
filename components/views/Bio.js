@@ -1,5 +1,5 @@
 import html from "html-literal";
-import image1 from "../assets/kenheadshot.jpg";
+import image1 from "../../assets/555.jpg";
 
 export default () => html`
   <section id="bio">
