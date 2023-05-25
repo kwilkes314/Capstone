@@ -82,7 +82,7 @@ app.get("/weather/:city", (request, response) => {
 //response.json(responseBody);
 //});
 
-app.use("./routers/contacts", contacts);
+app.use("/contacts", contacts);
 
 // Tell the Express app to start listening
 // Let the humans know I am running and listening on 4040
