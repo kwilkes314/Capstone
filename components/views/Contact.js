@@ -1,21 +1,45 @@
 import html from "html-literal";
 
 export default () => html`
-<form action="" method="POST" id="main">
-  <label for="name">Name:</label>
-  <input type="text" name="name" id="name" placeholder="Full Name" required />
-
-  <label for="email">Email:</label>
-  <input type="email" name="email" id="email" placeholder="you@somewhere.com" />
-
-  <label for="fone">Phone:</label>
-  <input type="tel" name="fone" id="fone" placeholder="333-333-3333" />
-
-  <div>
-    <label for="msg">Enter your message:</label>
-    <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-  </div>
-
-
-  <input type="submit" value="Submit" />
-</form>`;
+  <form
+    id="fs-frm"
+    name="simple-contact-form"
+    accept-charset="utf-8"
+    action="https://formspree.io/f/mjvddobb"
+    method="post"
+  >
+    <fieldset id="fs-frm-inputs">
+      <label for="full-name">Full Name</label>
+      <input
+        type="text"
+        name="name"
+        id="full-name"
+        placeholder="First and Last"
+        required=""
+      />
+      <label for="email-address">Email Address</label>
+      <input
+        type="email"
+        name="_replyto"
+        id="email-address"
+        placeholder="email@domain.tld"
+        required=""
+      />
+      <label for="message">Message</label>
+      <textarea
+        rows="5"
+        name="message"
+        id="message"
+        placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus."
+        required=""
+      ></textarea>
+      <input
+        type="hidden"
+        name="_subject"
+        id="email-subject"
+        value="Contact Form Submission"
+      />
+    </fieldset>
+    <input type="submit" value="Submit" />
+  </form>
+`;
