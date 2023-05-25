@@ -1,30 +1,27 @@
 import mongoose from "mongoose";
 
 const contactSchema = new mongoose.Schema({
-  name:{
+  name: {
     type: String,
     required: true,
-    validate: /^[A-Za-z ]*$/,
+    validate: /^[A-Za-z ]*$/
   },
-email:{
+  email: {
     type: String,
     required: true,
-  validate: /^[A-Za-z ]*$/,
+    validate: /^[A-Za-z ]*$/
   },
-  phone:{
+  phone: {
     type: Number,
     required: true,
-    validate: /^[0-9]*$/,
+    validate: /^[0-9]*$/
   },
-  message:{
+  message: {
     type: String,
     required: true,
-    validate: /^[A-Za-z ]*$/,
-  },
-  };
+    validate: /^[A-Za-z ]*$/
+  }
+});
 
-  const Contact = mongoose.model("contact",contactSchema);
-  module.exports = Contact;
-
-
-
+const Contact = mongoose.model("Contact", contactSchema);
+module.exports = Contact;

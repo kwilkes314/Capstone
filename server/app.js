@@ -2,9 +2,9 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
-const pizzas = require("./routers/pizzas");
-const bootcamp = require("./routers/bootcamp");
-const contact = require("./routers/contact");
+//const pizzas = require("./routers/pizzas");
+//const bootcamp = require("./routers/bootcamp");
+const contacts = require("./routers/contacts");
 // Initialize the Express application
 const app = express();
 
@@ -75,14 +75,14 @@ app.get("/weather/:city", (request, response) => {
 
 //app.post("/add", (request, response) => {
 //const num1 = request.body.numberOne;
-  //const num2 = request.body.numberTwo;
- // const responseBody = {
-   // sum: num1 + num2
-  //};
- //response.json(responseBody);
+//const num2 = request.body.numberTwo;
+// const responseBody = {
+// sum: num1 + num2
+//};
+//response.json(responseBody);
 //});
 
-app.use("/contact", contact);
+app.use("./routers/contacts", contacts);
 
 // Tell the Express app to start listening
 // Let the humans know I am running and listening on 4040
