@@ -1,6 +1,5 @@
 const { Router } = require("express");
-const Pizza = require("../models/contact");
-const { Contact } = require("../../store");
+const Contact = require("../models/Contact");
 const router = Router();
 
 //  Route definitions go here
@@ -8,13 +7,13 @@ const router = Router();
 router.post("/", (request, response) => {
   const newContact = new Contact(request.body);
   newContact.save((error, record) => {
-    if (error?.name === 'ValidationError') return response.status(400).json(error.errors);
+    if (error?.name === "ValidationError")
+      return response.status(400).json(error.errors);
     if (error) return response.status(500).json(error.errors);
 
     response.json(record);
   });
 });
-
 
 // Get (read) all records from the collection
 router.get("/", (request, response) => {
@@ -24,7 +23,6 @@ router.get("/", (request, response) => {
     response.json(record);
   });
 });
-
 
 // Get a single record by ID using a query parameter
 router.get("/:id", (request, response) => {
@@ -61,10 +59,11 @@ router.put("/:id", (request, response) => {
       upsert: true
     },
     (error, record) => {
-    if (error?.name === 'ValidationError') return response.status(400).json(error.errors);
-    if (error) return response.status(500).json(error.errors);
+      if (error?.name === "ValidationError")
+        return response.status(400).json(error.errors);
+      if (error) return response.status(500).json(error.errors);
 
-    response.json(record);
+      response.json(record);
     }
   );
 });
