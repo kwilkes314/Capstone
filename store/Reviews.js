@@ -1,4 +1,5 @@
 export default {
   header: "My Reviews Page",
-  view: "Reviews"
+  view: "Reviews",
+  bootcamps: {}
 };

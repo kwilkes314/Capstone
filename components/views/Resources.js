@@ -7,9 +7,9 @@ import image6 from "../../assets/freecodecamp.jpg";
 import image7 from "../../assets/theodinproject.jpg";
 
 export default state => html`
-  <section>
-    <h2>Schools</h2>
-    <h3>LaunchCode</h3>
+  <section class="schools">
+    <h2 id="school">Schools</h2>
+    <h3 id="launch">LaunchCode</h3>
     <a href="https://www.launchcode.org/">
       <img src=${image2} id="launchcode" alt="launchcode"
     /></a>

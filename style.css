@@ -187,5 +187,58 @@ footer {
   padding: 50px;
 
 }
+#launchcode{
+  height: 300px;
+  width: 500px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+#savvycoders{
+  height: 300px;
+  width: 500px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+#claimacademy{
+  height: 300px;
+  width: 500px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+#freecodecamp{
+  height: 300px;
+  width: 500px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+#khanacademy{
+  height: 300px;
+  width: 500px;
+  justify-content: center;
+  display: block;
+    margin-left: auto;
+    margin-right: auto
 
 
+
+
+}
+#odinproject{
+  height:300px;
+  width: 500px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.schools{
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+#launch,#school{
+  text-align: center;
+}
