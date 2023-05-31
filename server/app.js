@@ -3,7 +3,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 //const pizzas = require("./routers/pizzas");
-//const bootcamp = require("./routers/bootcamp");
+const bootcamps = require("./routers/bootcamps");
 const contacts = require("./routers/contacts");
 // Initialize the Express application
 const app = express();
@@ -83,6 +83,7 @@ app.get("/weather/:city", (request, response) => {
 //});
 
 app.use("/contacts", contacts);
+app.use("/bootcamps", bootcamps);
 
 // Tell the Express app to start listening
 // Let the humans know I am running and listening on 4040
