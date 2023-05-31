@@ -111,7 +111,7 @@ router.hooks({
         // New Axios get request utilizing already made environment variable
         axios
           .get(
-            `${process.env.MONGODB}/
+            `${process.env.CONTACTS_API}/
               contact`
           )
           .then(response => {
@@ -125,18 +125,19 @@ router.hooks({
             done();
           });
         break;
-      case "Review":
+      case "Reviews":
         axios
           .get(
-            `${process.env.MONGODB}/
-            review`
+            `${process.env.BOOTCAMP_API}/
+            Reviews`
           )
           .then(response => {
             // We need to store the response to the state, in the next step but in the meantime let's see what it looks like so that we know what to store from the response.
             console.log("response", response);
-            store.Review.bootcamps = response.data;
+            store.Review.bootcamp = response.data;
             done();
           });
+        break;
       default:
         done();
     }
@@ -145,7 +146,7 @@ router.hooks({
     const view =
       params && params.data && params.data.view
         ? capitalize(params.data.view)
-        : "Home";
+        : "Reviews";
 
     render(store[view]);
   }
