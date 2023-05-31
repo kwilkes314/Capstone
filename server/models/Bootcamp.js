@@ -9,7 +9,7 @@ const bootcampSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  salary: {
+  cost: {
     type: Number,
     required: true
   },
