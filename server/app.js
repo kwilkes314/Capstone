@@ -84,6 +84,7 @@ app.get("/weather/:city", (request, response) => {
 
 app.use("/contacts", contacts);
 app.use("/bootcamps", bootcamps);
+//app.use("/reviews", Reviews);
 
 // Tell the Express app to start listening
 // Let the humans know I am running and listening on 4040
