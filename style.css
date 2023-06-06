@@ -185,6 +185,7 @@ footer {
 
 #launchcode-video{
   padding: 50px;
+  align-items: center;
 
 }
 #launchcode{
@@ -194,12 +195,14 @@ footer {
     margin-left: auto;
     margin-right: auto
 }
-#savvycoders{
-  height: 300px;
-  width: 500px;
-  display: block;
+  #savvycoder{
+    height: 300px;
+    width: 500px;
+    display:block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+
+
 }
 #claimacademy{
   height: 300px;
@@ -239,6 +242,26 @@ footer {
     margin-left: auto;
     margin-right: auto
 }
-#launch,#school{
+#launch,#vid, #claim, #school,#claim, #web, #free,#khan,#odin,#savy {
   text-align: center;
+}
+
+#bootcamp {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  height: auto;
+  width: 92.5%;
+  margin: auto;
+}
+
+#bootcamp tbody {
+  width: 100%;
+}
+
+#bootcamp th {
+  text-align: left;
+}
+
+#bootcamp td,th {
+  width: 25%;
 }
