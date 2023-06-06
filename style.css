@@ -1,7 +1,7 @@
 body {
   font-family: "Latto", "lucida-grande", "lucida sans unicode", tahoma,
     sans-serif;
-    background-color: gray;
+    background-color: rgb(10, 121, 190);
 
 }
 
@@ -185,7 +185,6 @@ footer {
 
 #launchcode-video{
   padding: 50px;
-  align-items: center;
 
 }
 #launchcode{
